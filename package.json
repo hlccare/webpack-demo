@@ -13,8 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^5.0.2",
+    "dart-sass": "^1.23.7",
     "html-webpack-plugin": "4",
     "mini-css-extract-plugin": "0.8",
+    "sass-loader": "8",
     "webpack": "4",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"

@@ -7,6 +7,23 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
     },
+    module: {
+        rules: [
+            {
+                test: /\.scss$/i,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('dart-sass')
+                        }
+                    },
+                ],
+            },
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'title-demo',
